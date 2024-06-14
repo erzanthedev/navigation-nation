@@ -1,20 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animated Navigation</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Sections -->
-  <section id="home"><a href="https://jacinto.design" target="_blank">Jacinto Design</a></section>
-  <section id="about"><h1>Learn More About Me</h1></section>
-  <section id="skills"><h1>These Are My Strengths</h1></section>
-  <section id="projects"><h1>These Are My Results</h1></section>
-  <section id="contact"><h1>Available Anytime</h1></section>
-  <!-- Script -->
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Nation</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sections -->
+    <section id="home">
+      <a href="https://jacinto.design" target="_blank">Jacinto Design</a>
+      <h1 id="title" data-aos="fade-up">N.A.Z.R.E</h1>
+      <p id="tag" data-aos="fade-left" data-aos-delay="1000">
+        Innovating Tomorrow’s Web and Mobile Solutions Today
+      </p>
+    </section>
+    <section id="about"><h1>Learn More About Me</h1></section>
+    <section id="skills"><h1>These Are My Strengths</h1></section>
+    <section id="projects"><h1>These Are My Results</h1></section>
+    <section id="contact"><h1>Available Anytime</h1></section>
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 200, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: "ease",
+      });
+    </script>
+  </body>
 </html>
