@@ -21,6 +21,17 @@ body {
 
 /* --- Navigation Menu ------------------------------ */
 
+/* Overlay */
+.overlay {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0 0 0 / 0.7);
+}
+
 /* --- Menu Bars ------------------------------------ */
 
 .menu-bars {
@@ -73,6 +84,7 @@ section {
 }
 
 section#home {
+  text-align: center;
   background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center center;
@@ -92,7 +104,7 @@ section#home a {
 
 #title {
   font-size: 4rem;
-  letter-spacing: 2rem;
+  letter-spacing: 12px;
 }
 
 #tag {
@@ -127,5 +139,17 @@ section#contact {
   .menu-bars {
     top: 0.5rem;
     right: 1rem;
+  }
+}
+
+/* Media Query: Title and Tag  */
+@media (max-width: 900px) {
+  #title {
+    font-size: 2rem;
+  }
+
+  #tag {
+    font-size: 1rem;
+    letter-spacing: 2px;
   }
 }
