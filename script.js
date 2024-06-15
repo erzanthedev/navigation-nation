@@ -8,7 +8,16 @@ const nav5 = document.getElementById("nav-5");
 
 const toggleNav = () => {
   // Toggle: Menu Bars Open/Closed
-  menuBars.classList.toggle("change");
+  menuBars.classList.toggle("change"); // Animate Hamburger Icon
+  // Toggle: Menu Active
+  overlay.classList.toggle("overlay-active");
+  if (overlay.classList.contains("overlay-active")) {
+    // Animate In - Overlay
+    overlay.classList.toggle("overlay-slide-right");
+  } else {
+    // Animate Out - Overlay
+    overlay.classList.toggle("overlay-slide-left");
+  }
 };
 
 // Event Listeners
