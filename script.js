@@ -13,10 +13,12 @@ const toggleNav = () => {
   overlay.classList.toggle("overlay-active");
   if (overlay.classList.contains("overlay-active")) {
     // Animate In - Overlay
-    overlay.classList.toggle("overlay-slide-right");
+    overlay.classList.remove("overlay-slide-left");
+    overlay.classList.add("overlay-slide-right");
   } else {
     // Animate Out - Overlay
-    overlay.classList.toggle("overlay-slide-left");
+    overlay.classList.remove("overlay-slide-right");
+    overlay.classList.add("overlay-slide-left");
   }
 };
 
